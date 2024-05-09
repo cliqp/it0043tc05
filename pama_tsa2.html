@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>PAMA - TSA2</title>
+</head>
+
+<body>
+    <center>
+        <form>
+            <label for="NatDex">National Dex: </label> <input type="number" id="NatDex" name="NatDex" min="1"><br><br>
+
+            <input type="radio" id="Gen1" name="Gen"> <label for="Gen">Generation 1</label>
+            <input type="radio" id="Gen2" name="Gen"> <label for="Gen">Generation 2</label>
+            <input type="radio" id="Gen3" name="Gen"> <label for="Gen">Generation 3</label>
+            <input type="radio" id="Gen4" name="Gen"> <label for="Gen">Generation 4</label>
+            <input type="radio" id="Gen5" name="Gen"> <label for="Gen">Generation 5</label>
+            <input type="radio" id="Gen6" name="Gen"> <label for="Gen">Generation 6</label>
+            <input type="radio" id="Gen7" name="Gen"> <label for="Gen">Generation 7</label>
+            <input type="radio" id="Gen8" name="Gen"> <label for="Gen">Generation 8</label>
+            <input type="radio" id="Gen9" name="Gen"> <label for="Gen">Generation 9</label> <br><br>
+
+            <label for="Pokemon Name">Pokemon Name: </label> <input type="text" id="Pokemon Name"
+                name="Pokemon Name"><br><br>
+
+            <label for="Image">Image: </label> <input type="file" id="image"><br><br>
+
+            <label for="Type 1">Type 1: </label>
+            <select name="Type 1">
+
+                <option value="Electric">Normal</option>
+                <option value="Grass">Water </option>
+                <option value="Poison">Grass </option>
+                <option value="Fire">Electric </option>
+                <option value="Water">Bug </option>
+                <option value="Earth">Fire</option>
+                <option value="Electric">Ground</option>
+                <option value="Electric">Psychic</option>
+                <option value="Electric">Rock</option>
+                <option value="Electric">Fighting</option>
+                <option value="Electric">Ice</option>
+                <option value="Electric">Ghost</option>
+                <option value="Electric">Dragon</option>
+                <option value="Electric">Steel</option>
+                <option value="Electric">Flying</option>
+                <option value="Electric">Fairy</option>
+                <option value="Electric">Dark</option>
+            </select>
+
+            <label for="Type 2">Type 2: </label>
+            <select name="Type 2">
+
+                <option value="Electric">Normal</option>
+                <option value="Grass">Water </option>
+                <option value="Poison">Grass </option>
+                <option value="Fire">Electric </option>
+                <option value="Water">Bug </option>
+                <option value="Earth">Fire</option>
+                <option value="Electric">Ground</option>
+                <option value="Electric">Psychic</option>
+                <option value="Electric">Rock</option>
+                <option value="Electric">Fighting</option>
+                <option value="Electric">Ice</option>
+                <option value="Electric">Ghost</option>
+                <option value="Electric">Dragon</option>
+                <option value="Electric">Steel</option>
+                <option value="Electric">Flying</option>
+                <option value="Electric">Fairy</option>
+                <option value="Electric">Dark</option>
+            </select><br><br>
+
+            <label for="Evolves From">Evolves From: </label> <input type="text" id="Evolves From" name="Evolves From">
+            <label for="Evolves To">Evolves To: </label> <input type="text" id="Evolves To" name="Evolves To"> <br><br>
+            <label for="Nickname">Nickname: </label> <input type="text" id="Nickname" name="Nickname"> <br><br>
+            <label for="Birthday">Birthday: </label> <input type="date" id="Birthday" name="Birthday"> <br> <br>
+            <input type="submit"> <br><br>
+
+        </form>
+        <table border="1px" width="1000px">
+            <tr>
+                <th>
+                    National Dex
+                </th>
+                <th>
+                    Generation
+                </th>
+                <th>
+                    Pokemon Name
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Type 1
+                </th>
+                <th>
+                    Type 2
+                </th>
+                <th>
+                    Evolves From
+                </th>
+                <th>
+                    Evolves To
+                </th>
+                <th>
+                    Nickname
+                </th>
+                <th>
+                    Birthday
+                </th>
+            </tr>
+            <tr align="center">
+                <td>
+                    202310893
+                </td>
+                <td>
+                    Generation Z
+                </td>
+                <td>
+                    Carl Jefferson Pama
+                </td>
+                <td>
+                    <img width="100px" height="100px"
+                        src="data:image/jpeg;base64,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">
+                </td>
+                <td bgcolor="gray" colspan="2">
+                    <font color="white">Normal</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Carl Sarap
+                </td>
+                <td>
+                    Cj
+                </td>
+                <td>
+                    02-16-2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0004
+                </td>
+                <td>
+                    Generation 1
+                </td>
+                <td>
+                    Charmander
+                </td>
+                <td>
+                    <img width="100px" height="100px"
+                        src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png">
+                </td>
+                <td bgcolor="red" colspan="2">
+                    <font color="white">Fire</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Charmeleon
+                </td>
+                <td>
+                    Chars
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0007
+                </td>
+                <td>
+                    Generation 1
+                </td>
+                <td>
+                    Squirtle
+                </td>
+                <td>
+                    <img width="100px" height="100px"
+                        src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png">
+                </td>
+                <td bgcolor="blue" colspan="2">
+                    <font color="white">Water</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Wartortle
+                </td>
+                <td>
+                    Squick
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+                <tr align="center">
+                    <td>
+                        #0023
+                    </td>
+                    <td>
+                        Generation 1
+                    </td>
+                    <td>
+                        Ekans
+                    </td>
+                    <td>
+                        <img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/009.png">
+                    </td>
+                    <td bgcolor="purple" colspan="2">
+                        <font color="white">Poison</font>
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        Arbok
+                    </td>
+                    <td>
+                        kans
+                    </td>
+                    <td>
+                        01-01-2024
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        #0011
+                    </td>
+                    <td>
+                        Generation 2
+                    </td>
+                    <td>
+                        Metapod
+                    </td>
+                    <td>
+                        <img width="100px" height="100px"
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/011.png">
+                    </td>
+                    <td bgcolor="Green" colspan="2">
+                        <font color="white">Bug</font>
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        Butterfree
+                    </td>
+                    <td>
+                        Meta
+                    </td>
+                    <td>
+                        01-01-2024
+                    </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0183
+                </td>
+                <td>
+                    Generation 2
+                </td>
+                <td>
+                    Marill
+                </td>
+                <td>
+                    <img width="100px" height="100px"
+                        src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/183.png">
+                </td>
+                <td bgcolor="Blue">
+                    <font color="white">Water</font>
+                </td>
+                <td bgcolor="Violet">
+                    <font color="white">Fairy</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Azumarill
+                </td>
+                <td>
+                    Azu
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+        </tr>
+        <tr align="center">
+            <td>
+                #0256
+            </td>
+            <td>
+                Generation 3
+            </td>
+            <td>
+                Combusken
+            </td>
+            <td>
+                <img width="100px" height="100px"
+                    src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/256.png">
+            </td>
+            <td bgcolor="Red">
+                <font color="white">Fire</font>
+            </td>
+            <td bgcolor="Chocolate">
+                <font color="white">Fighting</font>
+            </td>
+            <td>
+                Torchic
+            </td>
+            <td>
+                Blaziken
+            </td>
+            <td>
+                Ken
+            </td>
+            <td>
+                01-01-2024
+            </td>
+    </tr>
+    <tr align="center">
+        <td>
+            #0397
+        </td>
+        <td>
+            Generation 4
+        </td>
+        <td>
+            Staravia
+        </td>
+        <td>
+            <img width="100px" height="100px"
+                src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/397.png">
+        </td>
+        <td bgcolor="Grey">
+            <font color="white">Normal</font>
+        </td>
+        <td bgcolor="Sky Blue">
+            <font color="white">Flying</font>
+        </td>
+        <td>
+            Starly
+        </td>
+        <td>
+            Staraptor
+        </td>
+        <td>
+            Star
+        </td>
+        <td>
+            01-01-2024
+        </td>
+</tr>
+<tr align="center">
+    <td>
+        #0536
+    </td>
+    <td>
+        Generation 5
+    </td>
+    <td>
+        Palpitoad
+    </td>
+    <td>
+        <img width="100px" height="100px"
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/536.png">
+    </td>
+    <td bgcolor="Blue">
+        <font color="white">Water</font>
+    </td>
+    <td bgcolor="Mahogany">
+        <font color="white">Ground</font>
+    </td>
+    <td>
+        Tympole
+    </td>
+    <td>
+        Seismitoad
+    </td>
+    <td>
+        Tym
+    </td>
+    <td>
+        01-01-2024
+    </td>
+</tr>
+<tr align="center">
+    <td>
+        #0694
+    </td>
+    <td>
+        Generation 6
+    </td>
+    <td>
+        Helioptile
+    </td>
+    <td>
+        <img width="100px" height="100px"
+            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/694.png">
+    </td>
+    <td bgcolor="Yellow">
+        <font color="black">Electric</font>
+    </td>
+    <td bgcolor="Grey">
+        <font color="white">Normal</font>
+    </td>
+    <td>
+        -
+    </td>
+    <td>
+        Heliolisk
+    </td>
+    <td>
+        Helio
+    </td>
+    <td>
+        01-01-2024
+    </td>
+</tr>
+        </table>
+
+    </center>
+</body>
+
+</html>
