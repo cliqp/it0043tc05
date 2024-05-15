@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.heading {
+    animation-duration: 2s;
+    animation-name:slideout;
+  }
+  
+  @keyframes slideout {
+    from {
+      margin-left: 423px;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
+.FEUU{
+    height: 95vh;
+    width: 99vw;
+    background-color: white;
+}
+.FEUUU{
+    height: 150px;
+    position: absolute;
+    width: 110px;
+    top: 10px;
+    right: 400px;
+    left: 180px;
+    background-color: white;
+}
+.heading{
+    font-family:Helvetica;
+    font-size: 5rem;
+    position:absolute;
+    text-align:center;
+    top: 10px;
+    left: 470px;
+    
+    
+}
+
+.subheading{
+    font-family: 'Helvetica';
+    font-size: 2rem;
+    position:absolute;
+    text-align: center;
+    top: 120px;
+    left: 680px;
+}
+
+.p1{
+    font-family:Poppins;
+    font-size: large;
+    position:absolute;
+    text-align: center;
+    top: 220px;
+    right: 180px;
+    left: 100px; 
+    
+}
+
+.p2{
+    font-family:Poppins;
+    font-size: large;
+    position:absolute;
+    text-align: center;
+    top: 320px;
+    right: 180px;
+    left: 120px; 
+}
+
+.p3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    position:absolute;
+    text-align: center;
+    top: 370px;
+    right: 180px;
+    left: 130px;  
+}
+
+.span1{
+    color:goldenrod;
+}
+
+.span2{
+    color:darkgreen;
+}
