@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    ;
+}
+body{
+    background-color: orangered;
+}
+
+.container{
+    background-image: url(Pokemonbg.jpg);
+    margin: 0.75rem;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.box{
+    width: auto;
+    height: auto;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 7px 5px;
+    flex-grow: 1;
+}
+
+p{
+    display: none;
+    font-family: "Exo 2";
+    font-size: larger;
+    font-weight: bold;
+}
+
+.pokeball{
+    display: none;
+}
+
+img{
+    width: 250px;
+}
+
+
+
+@media (max-width: 1200px){
+    .container{
+        flex-direction: column;
+        /* align-items: stretch; */
+    }
+     .box{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+     }
+
+    p{
+        display: inline-block;
+        font-size: 2rem;
+
+    }
+    .pokeball{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+
+    img{
+        width: 60px;
+    }
+    .box:hover{
+        background-image: url(Gameboy.png);
+    }
+    .type{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 520px){
+    .container{
+        flex-direction: column;
+    }
+     .box{
+        display: block;
+        text-align: center;
+     }
+    p{
+        display: block;
+        font-size: 2rem;
+        
+    }
+    .pokeball{
+        display: none;
+    
+    }
+
+    img{
+        width: 60px;
+    }
+    .box:hover{
+        background-image: url(Gameboy.png);
+    }
+    .type{
+        display: inline-block;
+        justify-content: center;
+        width: 150px;
+        padding: 0.4rem;
+        margin: 0.2rem;
+        border-radius: 10px;
+    }
+
+#electric{
+    background-color: #ffdf3c;
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+}
+
+#grass{
+    background-color: #2db463;
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+
+}
+
+#poison{
+    background-color: #d2a0fd;
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+
+}
+
+#normal{
+    background-color: rgb(180, 175, 175);
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+
+}
+
+#fairy{
+    background-color: #f17fbc;
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+}
+#water{
+    background-color: #42dec9;
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+}
+
+#flying{
+    background-color: #94b1fc;
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+}
+#psychic{
+    background-color: #ff79c0;
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+
+}
+
+#bug{
+    background-color: rgb(75, 179, 75);
+    box-shadow: 2px 2px 2px 2px;
+    font-weight: 300;
+    font-size: large;
+    font-style: oblique;
+    color: black;
+}
+
+}
+
+
+#b1{
+    background-color: #FDD400;
+    
+}
+
+#b2{
+    background-color: #80EDAC;
+}
+
+#b3{
+    background-color: #EFA3CC;
+}
+
+#b4{
+    background-color: #7FE5D8;
+}
+
+#b5{
+    background-color: #6892FC;
+}
+
+#b6{
+    background-color: #0D5C9E;
+}
+
+#b7{
+    background-color: #A962E8;
+}
+
+#b8{
+    background-color: #FFDDD2;
+}
+
+#b9{
+    background-color: #EAE4C5;
+}
+
+#b10{
+    background-color: #F9CB58;
+}
+
+#b11{
+    background-color: #E5B076;
+}
+
+#b12{
+    background-color: #DDC38A;
+}
